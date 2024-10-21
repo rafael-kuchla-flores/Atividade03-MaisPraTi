@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Global Tags */
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+span {
+  font-size: 0.9rem;
+  color: #757373;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+/* Navigation */
+
+nav {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+ 
+}
+
+nav img {
+  width: 150px;
+  height: 100px;
+  cursor: pointer;
+}
+
+nav .navigation {
+  display: flex;
+}
+
+#menu-btn {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+#menu-close {
+  display: none;
+  cursor: pointer;
+}
+
+nav .navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+nav .navigation ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav .navigation ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #5500ff;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover {
+  color: #291ef2;
+}
+
+#home {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#home img {
+  width: 30%; /* adjust the width to your liking */
+  margin-right: 80px; /* add some space between the image and the divs */
+}
+
+#home .text-banner,
+#home .text-banner2 {
+  flex: 1; /* make the divs take equal space */
+}
+
+#home h3 {
+  color: #5500ff;
+}
+
+#home h1,
+#home h3 {
+  background-image: linear-gradient(to bottom, #5500ff, #033572);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+  
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.section {
+  width: 70%;
+  padding: 100px;
+  background-color: #f7f7f7;
+  height: 50vh;
+}
+
+.aside {
+  width: 25%;
+  padding: 100px;
+  background-color: #f7f7f7;
+  height: 50vh;
+}
+
+.aside ul {
+  padding: 0;
+  margin: 0;
+}
+
+.aside li {
+  margin-bottom: 10px;
+}
+
+.aside a {
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.aside a:hover {
+  color: #5500ff;
+}
+
+
+/*GALERIA DE FLASHES*/
+.gallery {
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.gallery .flash-text{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 700px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  object-position: center; /* added this line */
+}
+
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+
+.image-overlay .nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.image-overlay .nav-btn.prev {
+  left: 20px;
+}
+
+.image-overlay .nav-btn.next {
+  right: 20px;
+}
+
+
+footer{
+  background-color: black;
+  padding: 50px 0;
+}
+.container-footer{
+  max-width: 1400px;
+  padding: 0 4%;
+  margin: auto;
+}
+.row-footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
+.footer-col ul{
+  list-style: none;
+}
+.footer-col ul li{
+  margin: 10px 0;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.footer-col ul li a:hover{
+  color: #5500ff;
+  padding-left: 10px;
+}
+.footer-col .medias-socias{
+  margin-top: 30px;
+}
+.footer-col .medias-socias a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+  font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+  color: black;
+  background-color: white;
+}
+.footer-col .form-sub input{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
+.footer-col .form-sub input::placeholder{
+  color: white;
+}
+
+.footer-col .form-sub textarea{
+  width: 100%;
+  height: 50px;
+}
+.footer-col .form-sub button{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px; 
+  font-size: 17px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: white;        
+}
+/* Responsivo */
+@media (max-width: 800px) {
+  .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+}
+@media (max-width:600px) {
+  .footer-col{
+      width: 100%;
+  }
+}
+
+#link-topo{
+  text-decoration: none;
+  color: white;
+  background-color: #757373;
+  padding: 15px;
+  border-radius: 5px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  box-shadow: 3px 3px 10px #5500ff;
+}
+
+
+/* For large screens (1080px and above) */
+@media (min-width: 1080px) {
+  .card-container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1080px) {
+  .gallery .flash-text{
+    margin-top: 300px;
+  }
+}
+
+
+
+
