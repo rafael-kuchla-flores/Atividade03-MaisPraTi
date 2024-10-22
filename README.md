@@ -1,12 +1,12 @@
 <h1 align="center"> 
 
-# Tattoo Haven
+# Tattoo Virus
 
-Bem-vindo ao **Tattoo Haven** - onde a arte ganha vida na pele.
+Bem-vindo ao **Tattoo Virus** - onde a arte ganha vida na pele.
 
 ## Sobre Nós
 
-Tattoo Haven é um estúdio de tatuagem dedicado a transformar suas ideias em arte. Nossa equipe de tatuadores talentosos e experientes está pronta para criar desenhos personalizados que contam sua história de maneira 
+Tattoo Virus é um estúdio de tatuagem dedicado a transformar suas ideias em arte. Nossa equipe de tatuadores talentosos e experientes está pronta para criar desenhos personalizados que contam sua história de maneira 
 
  </h1>
 
